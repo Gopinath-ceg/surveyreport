@@ -1,0 +1,109 @@
+%
+% A simple LaTeX template for Books
+%  (c) Aleksander Morgado <aleksander@es.gnu.org>
+%  Released into public domain
+%
+
+\documentclass[11pt]{book}
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\begin{document}
+
+
+\pagestyle{empty}
+%\pagenumbering{}
+% Set book title
+\title{\textbf{Need to discard this page}}
+% Include Author name and Copyright holder name
+\author{Whatever}
+
+
+
+% 1st page for the Title
+%-------------------------------------------------------------------------------
+\maketitle
+
+
+% 2nd page, thanks message
+%-------------------------------------------------------------------------------
+
+
+% General definitions for all Chapters
+%-------------------------------------------------------------------------------
+
+% Define Page style for all chapters
+\pagestyle{fancy}
+\fontsize{25pt}{20pt}\selectfont
+% Delete the current section for header and footer
+\fancyhf{}
+% Set custom header
+\lhead[]{\thepage}
+\rhead[\thepage]{}
+
+% Set arabic (1,2,3...) page numbering
+
+% Set double spacing for the text
+\doublespacing
+
+
+
+% Not enumerated chapter
+%-------------------------------------------------------------------------------
+\chapter*{Acknowledgement}
+
+This undertaking has received the whole-hearted support of many individuals. We are grateful to our department for providing us with this course communication and soft skills lab.We would also like to thank the department of English in training us in this course.Our heartfelt thanks goes to our respected English madam Athma Dharshana Pharee for the meticulous planning and guiding us in all possible ways in implementing this survey.We would also thank all those who imparted their value added time, effort in filling the questionnaires,and providing us with the required  data.
+\\\\
+The survey and the report prepared is an effort of our vibrant team. Firstly we  thank our entire team for their valuable contribution to make this report a talk among everyone.
+We sincerely acknowledge the interest shown in our survey by our teachers, friends and other people who willingly shared their opinion on the privacy issues in social networking sites, they believe in. Their contribution has helped us in drawing a conclusion about the various threats faced by users of social networking sites.
+% If the chapter ends in an odd page, you may want to skip having the page
+%  number in the empty page
+\newpage
+\thispagestyle{empty}
+
+\chapter*{Preface}
+
+This  report  presents  findings about the various kinds of privacy issues and  threats faced by users of social networking sites. The main objective of the survey was to get information on levels of usage of social networking sites among different age groups of people over a specific period of time.A total of 75 people of various category such as college students,school students,teachers,engineers,householders were surveyed.
+\\We have performed this survey in both micro and macro levels. At the micro-level, our survey begins with an individual, snowballing as social relationships are traced, or we started  with a small group of individuals in a particular social context. Rather than tracing interpersonal interactions, at macro-level analysis we  traced the outcomes of interactions, such as economic or other resource transfer interactions over a group of people.
+\\The questionnaires covered a wide range of areas dealing in detail about all possible threats that would have been encountered by the users.We collected information on a wide range of  characteristics such as what type of information is mainly shared by users and  with whom. The information on the characteristics of the communities have been analyzed and presented in a separate report.
+\\Numerous studies and research is being conducted nowadays on privacy issues in social networking sites.Various fields where they conduct study on social networking issues are :
+\begin{itemize}
+	\item \textbf{ORGANISATIONAL STUDIES:}\\
+		Research studies of  formal or informal organizational relationships, organizational communication, economics, economic sociology, and other resource transfers. Social networks have also been used to examine how organizations interact with each other, characterizing the many informal connections that link executives together, as well as associations and connections between individual employees at different organizations. \\\\Intra-organizational networks have been found toaffect organizational commitment, organizational identification, interpersonal citizenship behaviour.
+	\item \textbf{SOCIAL CAPITAL: }\\
+		Social capital is a sociological concept which refers to the value of social relations and the role of cooperation and confidence to achieve positive outcomes. The term refers to the value one can get from their social ties. For example, newly arrived immigrants can make use of their social ties to established migrants to acquire jobs they may otherwise have trouble getting (e.g., because of lack of knowledge of language). \\\\Studies show that a positive relationship exists between social capital and the intensity of social network use.
+
+	\item \textbf{HUMAN ECOLOGY: }\\
+		Human ecology is an interdisciplinary and transdisciplinary study of the relationship between humans and their natural, social, and built environments. 
+		\\\\In criminology and urban sociology, much attention has been paid to the social networks among criminal actors.
+		\\\\It is expected that this report will be a useful source of information to policy makers, academicians and other stakeholders. It will also facilitate planning within the government and the business community and will stimulate further research and analysis.
+\end{itemize}
+
+% If the chapter ends in an odd page, you may want to skip having the page
+%  number in the empty page
+\newpage
+\thispagestyle{empty}
+
+
+% First enumerated chapter
+%-------------------------------------------------------------------------------
+\tableofcontents
+\pagenumbering{arabic}
+\chapter{Lorem ipsum...}
+
+% Last pages for ToC
+%-------------------------------------------------------------------------------
+\newpage
+% Include dots between chapter name and page number
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+%Finally, include the ToC
+
+
+
+
+\end{document}
